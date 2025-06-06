@@ -1236,6 +1236,7 @@ interface IEditorPartConfiguration {
 	tabSizing?: 'fit' | 'shrink' | 'fixed';
 	tabSizingFixedMinWidth?: number;
 	tabSizingFixedMaxWidth?: number;
+	tabSizingFitShrinkMaxWidth?: number;
 	pinnedTabSizing?: 'normal' | 'compact' | 'shrink';
 	pinnedTabsOnSeparateRow?: boolean;
 	tabHeight?: 'default' | 'compact';

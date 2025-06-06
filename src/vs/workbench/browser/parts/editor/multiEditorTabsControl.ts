@@ -246,6 +246,7 @@ export class MultiEditorTabsControl extends EditorTabsControl {
 				this.updateTabsFixedWidth(false);
 			}));
 		} else if (fromEvent) {
+			tabsContainer.style.setProperty('--tab-sizing-max-width', `${options.tabSizingFitShrinkMaxWidth}px`);
 			tabsContainer.style.removeProperty('--tab-sizing-fixed-min-width');
 			tabsContainer.style.removeProperty('--tab-sizing-fixed-max-width');
 			this.updateTabsFixedWidth(false);
@@ -742,7 +743,8 @@ export class MultiEditorTabsControl extends EditorTabsControl {
 		if (
 			oldOptions.tabSizingFixedMinWidth !== newOptions.tabSizingFixedMinWidth ||
 			oldOptions.tabSizingFixedMaxWidth !== newOptions.tabSizingFixedMaxWidth ||
-			oldOptions.tabSizing !== newOptions.tabSizing
+			oldOptions.tabSizing !== newOptions.tabSizing ||
+			oldOptions.tabSizingFitShrinkMaxWidth !== newOptions.tabSizingFitShrinkMaxWidth
 		) {
 			this.updateTabSizing(true);
 		}
