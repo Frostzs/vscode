@@ -900,6 +900,7 @@
 		"--tab-sizing-current-width",
 		"--tab-sizing-fixed-min-width",
 		"--tab-sizing-fixed-max-width",
+		"--tab-sizing-max-width",
 		"--editor-group-tab-height",
 		"--editor-group-tabs-height",
 		"--testMessageDecorationFontFamily",
