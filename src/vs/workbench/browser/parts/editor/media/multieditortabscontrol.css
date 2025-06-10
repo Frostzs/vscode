@@ -160,8 +160,9 @@
 }
 
 .monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.sizing-fit {
-	width: 120px;
-	min-width: fit-content;
+	width: fit-content;
+	min-width: 120px;
+	max-width: var(--tab-sizing-max-width, 350px);
 	flex-shrink: 0;
 }
 
@@ -184,9 +185,10 @@
 
 .monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.sizing-shrink {
 	min-width: 80px;
+	width: fit-content;
 	flex-basis: 0; /* all tabs are even */
 	flex-grow: 1; /* all tabs grow even */
-	max-width: fit-content;
+	max-width: var(--tab-sizing-max-width, 350px);
 }
 
 .monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.sizing-fit.sticky-compact,

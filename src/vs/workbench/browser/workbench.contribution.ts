@@ -226,6 +226,12 @@ const registry = Registry.as<IConfigurationRegistry>(ConfigurationExtensions.Con
 				'minimum': 38,
 				'markdownDescription': localize({ comment: ['{0}, {1} will be a setting name rendered as a link'], key: 'workbench.editor.tabSizingFixedMaxWidth' }, "Controls the maximum width of tabs when {0} size is set to {1}.", '`#workbench.editor.tabSizing#`', '`fixed`')
 			},
+			'workbench.editor.tabSizingFitShrinkMaxWidth': {
+				'type': 'number',
+				'default': 350,
+				'minimum': 120,
+				'markdownDescription': localize({ comment: ['{0}, {1} {2} will be a setting name rendered as a link'], key: 'workbench.editor.tabSizingFitShrinkMaxWidth' }, "Controls the maximum width of tabs when {0} size is set to either {1} or {2}.", '`#workbench.editor.tabSizing#`', '`fit`', '`shrink`')
+			},
 			'window.density.editorTabHeight': {
 				'type': 'string',
 				'enum': ['default', 'compact'],
